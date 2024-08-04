@@ -51,7 +51,7 @@ local function saveData(player)
 end
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local remotes = Workspace:WaitForChild("__REMOTES")
+local remotes = workspace:WaitForChild("__REMOTES")
 local core = remotes:WaitForChild("Core")
 local newStatsRemote = core:WaitForChild("Newstats")
 
