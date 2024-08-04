@@ -51,9 +51,9 @@ local function saveData(player)
 end
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local remotes = workspace:WaitForChild("remotes")
-local core = remotes:WaitForChild("core")
-local newStatsRemote = core:WaitForChild("newstats")
+local remotes = workspace:WaitForChild("__REMOTES")
+local core = remotes:WaitForChild("Core")
+local newStatsRemote = core:WaitForChild("Newstats")
 
 newStatsRemote.OnServerEvent:Connect(function(player, newStats)
     if player and player:IsA("Player") then
