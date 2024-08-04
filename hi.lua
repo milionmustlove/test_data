@@ -45,7 +45,7 @@ local function saveData(player)
         if success then
             setLastSaveTimestamp(player, getCurrentTime())
         else
-            warn("Failed to save data: " .. errorMessage)
+            warn("Failed to save data for player " .. player.Name .. ": " .. errorMessage)
         end
     end
 end
